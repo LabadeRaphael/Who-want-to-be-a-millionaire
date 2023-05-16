@@ -2,16 +2,13 @@ body{
     background-color: purple;
 }
 #playBtn{
-  margin-top:270px;
+  margin-top:290px;
   font-size: 5vh;
 }
 #listBody{
     background-color: purple;
 }
-/* #overEffect:hover{
-    background-color: beige !important;
-} */
-#continue{
+#timeCounting{
   animation: shake 5s;
   animation-iteration-count: infinite;
   color: #fff;
@@ -26,28 +23,21 @@ body{
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-    0%{ transform:   translate(-130px)}
+    0%{ transform:   translate(-80px)}
     100%{ 
-    transform:translate(130px) 
+    transform:translate(80px) 
   }
 }
-/* #modal{
-  background-color: purple;
-} */
 #bodyImg{
   background-image: url(2018-Who-Wants-To-Be-A-Millionaire-colour-corrected\ \(1\).jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-
-
 #backgroundSetting{
   animation: rounded 2s;
   animation-iteration-count:2;
 }
-
 @keyframes rounded{
   0%{ 
   transform: rotate(0deg)
