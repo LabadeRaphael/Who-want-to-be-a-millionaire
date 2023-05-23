@@ -109,7 +109,6 @@ const continueBtn=()=>{
         playMusic.play()
     }
 }
-let jdjd
 var allQuestions = []
 const loadQuestion = () => {
     var randomNumber = Math.floor(Math.random() * 41)
