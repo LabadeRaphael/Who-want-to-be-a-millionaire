@@ -835,11 +835,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==3) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"Which club has won the most Champions League titles?",
+                        choice1:"Munich",
+                        choice2:"Barca",
+                        choice3:"Liverpool", 
+                        choice4:"Madrid"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`

@@ -231,11 +231,11 @@ const loadQuestion = () => {
                 // retryQuestion for correctAnswerA
                 if (retryNumber==0) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"When was the Nigerian first political party formed?",
+                        choice1:"1923",
+                        choice2:"1922",
+                        choice3:"1921", 
+                        choice4:"1920"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -246,11 +246,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==1) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"Nigeria was first visited by the white men from which country?",
+                        choice1:"Portugal",
+                        choice2:"Germany",
+                        choice3:"Britian", 
+                        choice4:"England"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -261,11 +261,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==2) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"When was Nigeria amalgamated?",
+                        choice1:"1914",
+                        choice2:"1913",
+                        choice3:"1912", 
+                        choice4:"1911"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -276,11 +276,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==3) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"When was the first unsuccessful motion for Nigeria's independence moved?",
+                        choice1:"1953",
+                        choice2:"1952",
+                        choice3:"1951", 
+                        choice4:"1950"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -291,11 +291,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==4) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"How many geo-political zones are in Nigeria? ",
+                        choice1:"6",
+                        choice2:"5",
+                        choice3:"4", 
+                        choice4:"3"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -306,11 +306,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==5) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"Where is the first capital of Nigeria?",
+                        choice1:"Calabar",
+                        choice2:"Lagos",
+                        choice3:"Enugun", 
+                        choice4:"Abuja"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -416,11 +416,11 @@ const loadQuestion = () => {
                 // retryQuestion for correctAnswerB
                 if (retryNumber==0) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"When was Aba women riot?",
+                        choice1:"1928",
+                        choice2:"1929",
+                        choice3:"1930", 
+                        choice4:"1931"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -431,11 +431,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==1) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"When was ECOWAS founded?",
+                        choice1:"1974",
+                        choice2:"1975",
+                        choice3:"1976", 
+                        choice4:"1977"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
