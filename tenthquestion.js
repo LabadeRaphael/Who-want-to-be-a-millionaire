@@ -850,11 +850,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==4) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"What Kind of bird is in Liverpool Fc logo",
+                        choice1:"Owl",
+                        choice2:"Bat",
+                        choice3:"Eagle", 
+                        choice4:"Liver"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -865,11 +865,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==5) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"The first programming language that features with Object-Oriented Programming is called ?",
+                        choice1:"C++",
+                        choice2:"C",
+                        choice3:"Python", 
+                        choice4:"Simula"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -882,6 +882,384 @@ const loadQuestion = () => {
         })
     }
     if (randomNumber == 0) {
+        let questionObj = {
+            question: "Simula programming language was developed in which year",
+            choice1: "1967",
+            choice2: "1968",
+            choice3: "1969",
+            choice4: "1970"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 1) {
+        let questionObj = {
+            question: "How many keywords are in C language ?",
+            choice1: "32",
+            choice2: "33",
+            choice3: "34",
+            choice4: "35"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 2) {
+        let questionObj = {
+            question: "How many keywords are in Python 3.7",
+            choice1: "33",
+            choice2: "34",
+            choice3: "35",
+            choice4: "32"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 3) {
+        let questionObj = {
+            question: "The first electronic digital computer that was built by Dr.JohnV.Atanasoff and clifford Berry was developed in which year",
+            choice1: "1937",
+            choice2: "1938",
+            choice3: "1939",
+            choice4: "1940"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 4) {
+        let questionObj = {
+            question: "Second generation computer uses what instead of vacuum tube",
+            choice1: "Transistor",
+            choice2: "Processor",
+            choice3: "circuit",
+            choice4: "Sensor"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 5) {
+        let questionObj = {
+            question: "What language is a set of binary coded instructions ?",
+            choice1: "Machine",
+            choice2: "Low",
+            choice3: "High",
+            choice4: "Compilers"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 6) {
+        let questionObj = {
+            question: "Data bus width is measure by the number of what ?",
+            choice1: "Bits",
+            choice2: "Bytes",
+            choice3: "Size",
+            choice4: "Speed"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 7) {
+        let questionObj = {
+            question: "Which of this is not a type of computer bus",
+            choice1: "Email",
+            choice2: "Data",
+            choice3: "Address",
+            choice4: "Control"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 8) {
+        let questionObj = {
+            question: "which of the following is the first social networking website",
+            choice1: "Sixdegree",
+            choice2: "2go",
+            choice3: "Facebook",
+            choice4: "Usenet"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 9) {
+        let questionObj = {
+            question: "Usenet was establish in what year ?",
+            choice1: "1980",
+            choice2: "1970",
+            choice3: "1960",
+            choice4: "1940"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 10) {
+        let questionObj = {
+            question: "Which of the following laid the foundation for internet",
+            choice1: "Arpanet",
+            choice2: "Usenet",
+            choice3: "BBS",
+            choice4: "Myspace"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 11) {
+        let questionObj = {
+            question: "what year was the first social networking website introduced ?",
+            choice1: "1996",
+            choice2: "1997",
+            choice3: "1998",
+            choice4: "1999"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 12) {
+        let questionObj = {
+            question: "Facebook was launched successfully in what year",
+            choice1: "2024",
+            choice2: "2004",
+            choice3: "2014",
+            choice4: "2000"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 13) {
+        let questionObj = {
+            question: "Which of this is known for disappearing of photos, messages and stories ?",
+            choice1: "Whatsapp",
+            choice2: "Snapchat",
+            choice3: "LinkedIn",
+            choice4: "Twitter"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 14) {
+        let questionObj = {
+            question: "Tweets have a character limit which was originally 140 characters and was later expanded to what?",
+            choice1: "200",
+            choice2: "280",
+            choice3: "270",
+            choice4: "260"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 15) {
+        let questionObj = {
+            question: "Which of the following is a curated collections of tweets centered around a specific event or topics ?",
+            choice1: "Lists",
+            choice2: "Moments",
+            choice3: "Hashtags",
+            choice4: "Likes"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 16) {
+        let questionObj = {
+            question: "EDVAC (Electronic Discrete Variable Automatic Computer) was developed in which year",
+            choice1: "1946",
+            choice2: "1947",
+            choice3: "1948",
+            choice4: "1949"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 17) {
+        let questionObj = {
+            question: "which of this malware modify or delete data when attached to other executable files",
+            choice1: "Spyware",
+            choice2: "Virus",
+            choice3: "Worms",
+            choice4: "Adware"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 18) {
+        let questionObj = {
+            question: "which of this malware replicate themselves",
+            choice1: "Bot",
+            choice2: "Worms",
+            choice3: "Virus",
+            choice4: "Rootkit"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 19) {
+        let questionObj = {
+            question: "Which of the following printers is less durable and prone to clogging and damage ?",
+            choice1: "Line",
+            choice2: "Inkjet",
+            choice3: "Dot",
+            choice4: "Laser"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 20) {
+        let questionObj = {
+            question: "Which of the following printers requires a warm up time ?",
+            choice1: "Inkjet",
+            choice2: "Laser",
+            choice3: "Line",
+            choice4: "Dot"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 21) {
         let questionObj = {
             question: "",
             choice1: "",
@@ -900,3 +1278,4 @@ const loadQuestion = () => {
         correctAnswerC()
     }
 }
+
