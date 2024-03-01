@@ -3,10 +3,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FIFTH QUESTION</title>
+  <title>FIFTEENTH QUESTION</title>
   <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
   <link rel="stylesheet" href="question.css">
-  <script src="fifthquestion.js"></script>
+  <script src="fifteenthquestion.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 <body onload="timerCounter()">
@@ -16,7 +16,7 @@
       <button class="rounded-5 border border-2 fw-bold fs-1 text-center navbar-toggler-icon type="button data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">$</button>
     </div>
     <div id="timerDisplayer" class="timer rounded-circle mx-auto d-block border border-5 col-5 text-center pt-3 fw-bold fs-2" style="height: 90px; width: 90px;"></div>
-    <div class="rounded-pill mx-auto d-block border border-5 col-lg-3 col-6 mt-2 text-center fw-bold fs-2  text-warning">$50,000</div>
+    <div class="rounded-pill mx-auto d-block border border-5 col-lg-3 col-6 mt-2 text-center fw-bold fs-2  text-warning">$25,000,000</div>
     <div class="h-25 border border-start-0 col-12 border-end-0 fw-bold fs-1 py-3 text-center text-light" id="questionBox"></div>
     <div class="d-flex pt-3">
       <hr class="border border-dark border-3 col-3 rounded-5" id="firstBorderA">  
@@ -45,6 +45,7 @@
     <div class="rounded-circle mx-auto d-block border btn border-5 col-5 text-center pt-2 fw-bold fs-4" style="height: 90px; width: 90px;" id="retryBtn"><img src="download (3).png" width="45px" class="rounded-circle" alt=""><br><small class="rounded-2 text-light fs-5" id="retryCounter"></small></div>
   </div>
 </div>
+  <div></div>
   <!--Exit Modal -->
   <div class="modal fade mt-5 container" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -118,6 +119,26 @@
       </div>
     </div>
   </div>
+   <!-- complete all the question modal -->
+   <div class="modal fade mt-5" id="completeModal" class data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <img src="200w.gif" width="60px" height="60px" class="rounded-circle" alt="">
+           <h2 class="fw-bold text-center mx-auto">CONGRATULATION'S!!!</h2>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center fw-bold">You just won $ 25,000,000</h2>
+            <img src="./money.gif" class="ms-5">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary P-lg-3 p-2" onclick="homePage()">LEAVE GAME</button>
+          <button type="button" class="btn btn-primary P-lg-3 p-2" onclick="newGame()">NEW GAME</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- side bar nav -->
   <nav class="navbar">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -129,7 +150,7 @@
         <h1 class="text-center pt-2 text-light d-lg-none fw-bold" id="timeCounting">YOUR TIME IS COUNTING</h1>
         <div class="d-flex pt-3">
           <hr class="border border-dark border-3 col-3 rounded-5">  
-          <button class="btn col-6 bg-warning rounded-5 fw-bold"><span class="me-3">14.</span>$20,000,000</button> 
+          <button class="btn col-6 bg-success rounded-5 fw-bold"><span class="me-3">14.</span>$20,000,000</button> 
           <hr class="border col-3 border-light border-3 rounded-5">
         </div>
         <div class="d-flex p-1">
@@ -179,7 +200,7 @@
         </div>
         <div class="d-flex p-1">
           <hr class="border border-dark border-3 col-3 rounded-5">  
-          <button class="btn col-6 bg-success rounded-5 fw-bold"><span class="me-3">4.</span>$30,000</button> 
+          <button class="btn col-6 bg-warning rounded-5 fw-bold"><span class="me-3">4.</span>$30,000</button> 
           <hr class="border col-3 border-light border-3 rounded-5">
         </div>
         <div class="d-flex p-1">

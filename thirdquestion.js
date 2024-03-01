@@ -112,11 +112,11 @@ const continueBtn=()=>{
 var allQuestions = []
 const loadQuestion = () => {
     var randomNumber = Math.floor(Math.random() * 41)
-    let getMoneyEarn=localStorage.getItem("moneyEarn")
-    document.getElementById("exitMoneyWon").innerText=getMoneyEarn
-    document.getElementById("leaveMoneyWon").innerText=getMoneyEarn
-    document.getElementById("timeupMoneyWon").innerText=getMoneyEarn
-    document.getElementById("wrongAnswerMoneyWon").innerText=getMoneyEarn
+    let getMoneyEarn=JSON.parse(localStorage.getItem("moneyEarn"))
+    document.getElementById("exitMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("leaveMoneyWon").innerText==`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("timeupMoneyWon").innerText==`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("wrongAnswerMoneyWon").innerText==`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
     let getFiftyFifty=localStorage.getItem("fifftyFifty")
     if ( getFiftyFifty>0) {
         fiftyFiftyCounter.innerText=1

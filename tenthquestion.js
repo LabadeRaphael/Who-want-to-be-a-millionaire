@@ -111,7 +111,7 @@ const continueBtn=()=>{
 }
 var allQuestions = []
 const loadQuestion = () => {
-    var randomNumber = Math.floor(Math.random() * 41)
+    var randomNumber = Math.floor(Math.random() * 27)
     let getMoneyEarn=localStorage.getItem("moneyEarn")
     document.getElementById("exitMoneyWon").innerText=getMoneyEarn
     document.getElementById("leaveMoneyWon").innerText=getMoneyEarn
@@ -1261,11 +1261,11 @@ const loadQuestion = () => {
     }
     if (randomNumber == 21) {
         let questionObj = {
-            question: "",
-            choice1: "",
-            choice2: "",
-            choice3: "",
-            choice4: ""
+            question: "What is acrophobia a fear of?",
+            choice1: "Computer",
+            choice2: "Death",
+            choice3: "Heights",
+            choice4: "Dogs"
         }
         allQuestions.push(questionObj)
         document.getElementById("questionBox").innerHTML = `${questionObj.question}`
@@ -1277,5 +1277,96 @@ const loadQuestion = () => {
         console.log(findAnswer);
         correctAnswerC()
     }
+    if (randomNumber == 22) {
+        let questionObj = {
+            question: "What is the capital of Ireland?",
+            choice1: "Berlin",
+            choice2: "Kiev",
+            choice3: "Dublin",
+            choice4: "Minsk"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerC()
+    }
+    if (randomNumber == 23) {
+        let questionObj = {
+            question: "What is the state capital of New York",
+            choice1: "Algiers",
+            choice2: "Kabul",
+            choice3: "Albany",
+            choice4: "Tirane"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerC()
+    }
+    if (randomNumber == 24) {
+        let questionObj = {
+            question: "Where is Angel Falls, the world’s largest waterfall, located?",
+            choice1: "Uganda",
+            choice2: "Gabon",
+            choice3: "Tanzania",
+            choice4: "Venezuela"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerD()
+    }
+    if (randomNumber == 25) {
+        let questionObj = {
+            question: "What is the only continent with land in all four hemispheres?",
+            choice1: "America",
+            choice2: "Europe",
+            choice3: "Asia",
+            choice4: "Africa"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerD()
+    }
+    if (randomNumber == 26) {
+        let questionObj = {
+            question: "What is a group of crows called?",
+            choice1: "Crew",
+            choice2: "Troupe",
+            choice3: "Gang",
+            choice4: "Murder"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerD()
+    }
+   
 }
 

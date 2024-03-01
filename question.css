@@ -1,9 +1,15 @@
 body{
-    background-color: purple;
+  background-color: purple;
+  /* background-image: url(./unnamed.gif); */
+}
+#money{
+  background-image: url(./unnamed.gif);
+
 }
 #playBtn{
   margin-top:290px;
   font-size: 5vh;
+  background-color: purple;
 }
 #listBody{
     background-color: purple;
@@ -15,6 +21,10 @@ body{
   text-align: center;
   animation: shake 2s ease-in-out infinite alternate;
 }
+#footer{
+  background-color: purple;
+}
+
 @keyframes shake {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;

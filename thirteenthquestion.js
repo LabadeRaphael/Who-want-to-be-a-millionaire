@@ -111,7 +111,7 @@ const continueBtn=()=>{
 }
 var allQuestions = []
 const loadQuestion = () => {
-    var randomNumber = Math.floor(Math.random() * 41)
+    var randomNumber = Math.floor(Math.random() * 8)
     let getMoneyEarn=localStorage.getItem("moneyEarn")
     document.getElementById("exitMoneyWon").innerText=getMoneyEarn
     document.getElementById("leaveMoneyWon").innerText=getMoneyEarn
@@ -412,7 +412,7 @@ const loadQuestion = () => {
             if (getRetry>0) {
                 localStorage.setItem("retry",0)
                 retryCounter.innerText=0
-                var retryNumber = Math.floor(Math.random() * 6)
+                var retryNumber = Math.floor(Math.random() * 2)
                 // retryQuestion for correctAnswerB
                 if (retryNumber==0) {
                     let questionObj={
@@ -436,66 +436,6 @@ const loadQuestion = () => {
                         choice2:"1975",
                         choice3:"1976", 
                         choice4:"1977"
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==2) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==3) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==4) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==5) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -599,15 +539,15 @@ const loadQuestion = () => {
             if (getRetry>0) {
                 localStorage.setItem("retry",0)
                 retryCounter.innerText=0
-                var retryNumber = Math.floor(Math.random() * 6)
+                var retryNumber = Math.floor(Math.random() * 2)
                 // retryQuestion for correctAnswerC
                 if (retryNumber==0) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"How many times per day does the average American open their fridge?",
+                        choice1:"20",
+                        choice2:"15",
+                        choice3:"33", 
+                        choice4:"17"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -618,71 +558,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==1) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==2) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==3) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==4) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==5) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"What color is an airplane’s famous black box?",
+                        choice1:"Black",
+                        choice2:"Red",
+                        choice3:"Orange", 
+                        choice4:"Pink"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -786,15 +666,15 @@ const loadQuestion = () => {
             if (getRetry>0) {
                 localStorage.setItem("retry",0)
                 retryCounter.innerText=0
-                var retryNumber = Math.floor(Math.random() * 6)
+                var retryNumber = Math.floor(Math.random() * 2)
                 // retryQuestion for correctAnswerD
                 if (retryNumber==0) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"What is Bombay Duck’s main ingredient?",
+                        choice1:"Turkey",
+                        choice2:"Chicken",
+                        choice3:"Duck", 
+                        choice4:"Fish"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -805,71 +685,11 @@ const loadQuestion = () => {
                 }
                 if (retryNumber==1) {
                     let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==2) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==3) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==4) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
-                    }
-                    allQuestions.push(questionObj)
-                    document.getElementById("questionBox").innerHTML=`${questionObj.question}`
-                    document.getElementById("optionA").innerHTML=`${questionObj.choice1}`
-                    document.getElementById("optionB").innerHTML=`${questionObj.choice2}`
-                    document.getElementById("optionC").innerHTML=`${questionObj.choice3}`
-                    document.getElementById("optionD").innerHTML=`${questionObj.choice4}`
-                }
-                if (retryNumber==5) {
-                    let questionObj={
-                        question:"",
-                        choice1:"",
-                        choice2:"",
-                        choice3:"", 
-                        choice4:""
+                        question:"How many tails does a Manx cat have?",
+                        choice1:"3",
+                        choice2:"2",
+                        choice3:"1", 
+                        choice4:"0"
                     }
                     allQuestions.push(questionObj)
                     document.getElementById("questionBox").innerHTML=`${questionObj.question}`
@@ -883,11 +703,83 @@ const loadQuestion = () => {
     }
     if (randomNumber == 0) {
         let questionObj = {
-            question: "",
-            choice1: "",
-            choice2: "",
-            choice3: "",
-            choice4: ""
+            question: "A green owl is the mascot for which app?",
+            choice1: "Duolingo",
+            choice2: "Tinder",
+            choice3: "Spotify",
+            choice4: "Todoist"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 1) {
+        let questionObj = {
+            question: "When was eBay founded?",
+            choice1: "1995",
+            choice2: "1996",
+            choice3: "1997",
+            choice4: "1998"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerA()
+    }
+    if (randomNumber == 2) {
+        let questionObj = {
+            question: "What year was the iPhone first released?",
+            choice1: "2006",
+            choice2: "2007",
+            choice3: "2008",
+            choice4: "2009"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 3) {
+        let questionObj = {
+            question: "In which year was Slido founded?",
+            choice1: "2013",
+            choice2: "2012",
+            choice3: "2011",
+            choice4: "2010"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerB()
+    }
+    if (randomNumber == 4) {
+        let questionObj = {
+            question: "How many stars are on the United States flag?",
+            choice1: "52",
+            choice2: "51",
+            choice3: "50",
+            choice4: "55"
         }
         allQuestions.push(questionObj)
         document.getElementById("questionBox").innerHTML = `${questionObj.question}`
@@ -898,5 +790,59 @@ const loadQuestion = () => {
         let findAnswer = allQuestions.find((item) => item = "")
         console.log(findAnswer);
         correctAnswerC()
+    }
+    if (randomNumber == 5) {
+        let questionObj = {
+            question: "What is the name of a duel with three people involved?",
+            choice1: "Triage",
+            choice2: "Tryst",
+            choice3: "Truel",
+            choice4: "Trio"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerC()
+    }
+    if (randomNumber == 6) {
+        let questionObj = {
+            question: "In what decade was Madonna born?",
+            choice1: "1920s",
+            choice2: "1930s",
+            choice3: "1940s",
+            choice4: "1950s"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerD()
+    }
+    if (randomNumber == 7) {
+        let questionObj = {
+            question: "As of July 2023, how many episodes of South Park are there?",
+            choice1: "230",
+            choice2: "250",
+            choice3: "300",
+            choice4: "325"
+        }
+        allQuestions.push(questionObj)
+        document.getElementById("questionBox").innerHTML = `${questionObj.question}`
+        document.getElementById("optionA").innerHTML = `${questionObj.choice1}`
+        document.getElementById("optionB").innerHTML = `${questionObj.choice2}`
+        document.getElementById("optionC").innerHTML = `${questionObj.choice3}`
+        document.getElementById("optionD").innerHTML = `${questionObj.choice4}`
+        let findAnswer = allQuestions.find((item) => item = "")
+        console.log(findAnswer);
+        correctAnswerD()
     }
 }
