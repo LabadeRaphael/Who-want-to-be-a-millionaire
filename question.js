@@ -3,9 +3,6 @@ playMusic.play()
 const wrongAnswer=()=>{
     $("#wrongModal").modal('show');
 }
-const surface = () => {
-    window.location = "question.html"
-}
 var countSecond = 30
 let alarmMusic=new Audio("alarm.mp3")
 const timerCounter = () => {
@@ -114,11 +111,11 @@ var allQuestions = []
 const loadQuestion = () => {
     var randomNumber = Math.floor(Math.random() * 101)
     localStorage.setItem("moneyEarn",0)
-    let getMoneyEarn=localStorage.getItem("moneyEarn")
-    document.getElementById("exitMoneyWon").innerText=getMoneyEarn
-    document.getElementById("leaveMoneyWon").innerText=getMoneyEarn
-    document.getElementById("timeupMoneyWon").innerText=getMoneyEarn
-    document.getElementById("wrongAnswerMoneyWon").innerText=getMoneyEarn
+    let getMoneyEarn=JSON.parse(localStorage.getItem("moneyEarn"))
+    document.getElementById("exitMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("leaveMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("timeupMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("wrongAnswerMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
     localStorage.setItem("fifftyFifty",1)
     fiftyFiftyCounter.innerText=1
     localStorage.setItem("retry",1)

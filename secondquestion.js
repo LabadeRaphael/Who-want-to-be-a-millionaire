@@ -8,9 +8,7 @@ if (musicNomusic=='false') {
 const wrongAnswer=()=>{
     $("#wrongModal").modal('show');
 }
-const dollarSign = () => {
-    window.location = "moneylist.html"
-}
+
 var countSecond = 30
 let alarmMusic=new Audio("alarm.mp3")
 const timerCounter = () => {

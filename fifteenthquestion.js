@@ -10,24 +10,8 @@ const wrongAnswer=()=>{
 }
 const completeModal=()=>{
     $("#completeModal").modal('show');
-    let img = document.createElement('img');
-    img.src ='unnamed.gif';
-    document.getElementById('body').appendChild(img);
-    // res.innerHTML = "Image Element Added.";
-    // document.getElementById("body").style.backgroundColor="red"
-    // document.getElementById("body").style.backgroundImage=url("./unnamed.gif");
-    // url(./unnamed.gif)
-    // let me =document.getElementById("body")
-    // me.src="./unnamed.gif"
+}
 
-    // let img = document.createElement('img');
-    // img.src ='nonmusic.jpeg';
-    // document.getElementById('body').src="nonmusic.jpeg"
-    // document.getElementById("#body").style.backgroundImage.src=="nonmusic.jpeg"
-}
-const dollarSign = () => {
-    window.location = "moneylist.html"
-}
 var countSecond = 30
 let alarmMusic=new Audio("alarm.mp3")
 const timerCounter = () => {
@@ -129,11 +113,11 @@ const continueBtn=()=>{
 var allQuestions = []
 const loadQuestion = () => {
     var randomNumber = Math.floor(Math.random() * 8)
-    let getMoneyEarn=localStorage.getItem("moneyEarn")
-    document.getElementById("exitMoneyWon").innerText=getMoneyEarn
-    document.getElementById("leaveMoneyWon").innerText=getMoneyEarn
-    document.getElementById("timeupMoneyWon").innerText=getMoneyEarn
-    document.getElementById("wrongAnswerMoneyWon").innerText=getMoneyEarn
+    let getMoneyEarn=JSON.parse(localStorage.getItem("moneyEarn"))
+    document.getElementById("exitMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("leaveMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("timeupMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("wrongAnswerMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
     let getFiftyFifty=localStorage.getItem("fifftyFifty")
     if ( getFiftyFifty>0) {
         fiftyFiftyCounter.innerText=1
@@ -751,7 +735,7 @@ const loadQuestion = () => {
     if (randomNumber == 5) {
         let questionObj = {
             question: "How many US presidents have been assassinated till 2023?",
-            choice1: "Four",
+            choice1: "Five",
             choice2: "Three",
             choice3: "Four",
             choice4: "Two"

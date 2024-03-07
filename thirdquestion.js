@@ -8,9 +8,7 @@ if (musicNomusic=='false') {
 const wrongAnswer=()=>{
     $("#wrongModal").modal('show');
 }
-const dollarSign = () => {
-    window.location = "moneylist.html"
-}
+
 var countSecond = 30
 let alarmMusic=new Audio("alarm.mp3")
 const timerCounter = () => {
@@ -114,9 +112,9 @@ const loadQuestion = () => {
     var randomNumber = Math.floor(Math.random() * 41)
     let getMoneyEarn=JSON.parse(localStorage.getItem("moneyEarn"))
     document.getElementById("exitMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
-    document.getElementById("leaveMoneyWon").innerText==`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
-    document.getElementById("timeupMoneyWon").innerText==`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
-    document.getElementById("wrongAnswerMoneyWon").innerText==`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("leaveMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("timeupMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
+    document.getElementById("wrongAnswerMoneyWon").innerText=`${getMoneyEarn.toLocaleString("en-US", {style:"currency",currency:"USD"})}`
     let getFiftyFifty=localStorage.getItem("fifftyFifty")
     if ( getFiftyFifty>0) {
         fiftyFiftyCounter.innerText=1

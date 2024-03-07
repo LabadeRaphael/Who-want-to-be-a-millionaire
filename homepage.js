@@ -30,7 +30,7 @@ const soundBtn=()=>{
     console.log(checkSound);
     if ( checkSound) {
         localStorage.setItem("sound",false)
-        soundId.src = "nosound.jpg"
+        soundId.src = "nosound.png"
     }
     else {
         soundId.src = "sound.png"
